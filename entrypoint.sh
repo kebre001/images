@@ -1,8 +1,8 @@
 #!/bin/ash
 cd /home/container
 
-# Output Current Java Version
-java -version
+# Output Current Python Version
+python3 -V
 
 # Make internal Docker IP address available to processes.
 export INTERNAL_IP=`ip route get 1 | awk '{print $NF;exit}'`
